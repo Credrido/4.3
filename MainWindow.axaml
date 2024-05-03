@@ -1,0 +1,64 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="APP.MainWindow"
+        Title="APP"
+        Width = "1000">
+    <Grid ShowGridLines = "True"
+          RowDefinitions = "auto,*"
+          ColumnDefinitions = "*,auto">
+        <DockPanel>
+          <TextBlock HorizontalAlignment = "Left"> Home
+          </TextBlock>
+
+          <TextBlock HorizontalAlignment = "Left"
+                     Margin = "15 0 0 0"> About
+          </TextBlock>
+
+          <TextBlock HorizontalAlignment = "Left"
+                     Margin = "15 0 0 0"> Blog's Main Topic 1
+          </TextBlock>
+
+          <TextBlock HorizontalAlignment = "Left"
+                     Margin = "25 0 0 0"> Blog's Main Topic 2
+          </TextBlock>
+
+          <TextBlock HorizontalAlignment = "Left"
+                     Margin = "25 0 0 0"> Blog's Main Topic 3
+          </TextBlock>
+
+          <TextBlock HorizontalAlignment = "Left"
+                     Margin = "25 0 0 0"> Associated Blogs
+          </TextBlock>
+
+        </DockPanel>
+
+        <DockPanel Grid.Row = "0"
+                   Grid.Column = "1">
+            <TextBlock HorizontalAlignment = "Right"
+                       Margin = "0 0 15 0"> RSS
+            </TextBlock>
+        </DockPanel>
+
+        <StackPanel Grid.Row = "1"
+                    Grid.Column = "0"
+                    Orientation = "Vertical">
+            <TextBlock> Article 1
+            </TextBlock>
+
+            <TextBlock Margin = "0 20 60 0"
+                       TextWrapping = "Wrap"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu purus ut metus ultrices eleifend. Cras sed vulputate eros. Morbi ultrices tristique lacus vel elementum. Aenean nulla dolor, aliquet vel ultricies id, dictum non ligula. Integer a velit quis odio imperdiet iaculis a vel velit. Curabitur pellentesque dapibus volutpat. Vivamus quis diam feugiat, tristique quam vitae, cursus nulla. Donec non dapibus enim. Nam semper sapien diam, non porttitor metus gravida vitae. Nulla est orci, condimentum eget diam sed, fermentum dictum sapien. Nam laoreet metus in ligula congue dictum.
+
+Proin eu urna libero. Fusce et consectetur tortor. Praesent cursus lectus nisl, ut blandit ante fringilla non. Suspendisse auctor ornare mauris, et tincidunt nunc maximus at. Donec id ipsum id dui pharetra facilisis. Phasellus cursus sollicitudin lacus. Morbi metus turpis, posuere non laoreet vel, dapibus nec nisl. Ut tristique non lorem vitae scelerisque.
+            </TextBlock>
+        </StackPanel>
+
+        <DockPanel Grid.Row = "1"
+                   Grid.Column = "1">
+            <TextBlock> BLABLABLABLA
+            </TextBlock>
+        </DockPanel>
+    </Grid>
+</Window>
