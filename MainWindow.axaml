@@ -8,29 +8,29 @@
         Width = "1000">
     <Grid ShowGridLines = "True"
           RowDefinitions = "auto,*"
-          ColumnDefinitions = "*,auto">
+          ColumnDefinitions = "*,200">
         <DockPanel>
           <TextBlock HorizontalAlignment = "Left"> Home
           </TextBlock>
 
           <TextBlock HorizontalAlignment = "Left"
-                     Margin = "15 0 0 0"> About
+                     Margin = "10 0 0 0"> About
           </TextBlock>
 
           <TextBlock HorizontalAlignment = "Left"
-                     Margin = "15 0 0 0"> Blog's Main Topic 1
+                     Margin = "10 0 0 0"> Blog's Main Topic 1
           </TextBlock>
 
           <TextBlock HorizontalAlignment = "Left"
-                     Margin = "25 0 0 0"> Blog's Main Topic 2
+                     Margin = "20 0 0 0"> Blog's Main Topic 2
           </TextBlock>
 
           <TextBlock HorizontalAlignment = "Left"
-                     Margin = "25 0 0 0"> Blog's Main Topic 3
+                     Margin = "20 0 0 0"> Blog's Main Topic 3
           </TextBlock>
 
           <TextBlock HorizontalAlignment = "Left"
-                     Margin = "25 0 0 0"> Associated Blogs
+                     Margin = "20 0 0 0"> Associated Blogs
           </TextBlock>
 
         </DockPanel>
@@ -55,10 +55,24 @@ Proin eu urna libero. Fusce et consectetur tortor. Praesent cursus lectus nisl, 
             </TextBlock>
         </StackPanel>
 
-        <DockPanel Grid.Row = "1"
-                   Grid.Column = "1">
-            <TextBlock> BLABLABLABLA
+        <StackPanel Grid.Row = "1"
+                   Grid.Column = "1"
+                   Orientation = "Vertical">
+            <TextBlock Margin = "0 35 0 0"
+                       TextWrapping = "Wrap"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec bibendum lectus, quis aliquam diam. Nullam commodo ipsum lacus, a laoreet orci elementum non. Maecenas non risus mattis, mattis orci nec, rhoncus purus. Pellentesque viverra nunc felis, sed laoreet magna dapibus in. Praesent ut felis sollicitudin, porttitor dolor vitae, fringilla.
             </TextBlock>
-        </DockPanel>
+            <TextBlock Margin = "160 5 0 0"> More
+            </TextBlock>
+            <TextBlock Margin = "125 5 0 0"> Yesterday
+            </TextBlock>
+
+            <TextBlock Margin = "0 15 0 0"
+                       TextWrapping = "Wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida erat ante, ac cursus sem finibus sed. Maecenas id lacus eu metus cursus placerat a nec quam. Quisque iaculis neque id lorem pharetra aliquam. Integer elementum pellentesque efficitur. Fusce maximus dolor vitae augue placerat imperdiet. Suspendisse id nibh posuere, luctus.
+            </TextBlock>
+            <TextBlock Margin = "160 5 0 0"> More
+            </TextBlock>
+            <TextBlock Margin = "120 5 0 0"> 1 week ago
+            </TextBlock>
+        </StackPanel>
     </Grid>
 </Window>
