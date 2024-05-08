@@ -2,38 +2,41 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="600"
         x:Class="APP.MainWindow"
-        Title="APP"
-        Width = "1000">
-    <Grid ShowGridLines = "True"
+        CanResize="False"
+        Width = "870"
+        Height = "640">
+
+    <Grid ShowGridLines = "False"
           RowDefinitions = "auto,*"
           ColumnDefinitions = "*,200">
-        <DockPanel>
-          <TextBlock HorizontalAlignment = "Left"> Home
-          </TextBlock>
+        <Border BorderThickness="2" BorderBrush="Black" Grid.ColumnSpan="2">
+            <DockPanel>
+             <TextBlock HorizontalAlignment = "Left"> Home
+             </TextBlock>
 
-          <TextBlock HorizontalAlignment = "Left"
-                     Margin = "10 0 0 0"> About
-          </TextBlock>
+             <TextBlock HorizontalAlignment = "Left"
+                        Margin = "10 0 0 0"> About
+             </TextBlock>
 
-          <TextBlock HorizontalAlignment = "Left"
-                     Margin = "10 0 0 0"> Blog's Main Topic 1
-          </TextBlock>
+             <TextBlock HorizontalAlignment = "Left"
+                        Margin = "10 0 0 0"> Blog's Main Topic 1
+             </TextBlock>
 
-          <TextBlock HorizontalAlignment = "Left"
-                     Margin = "20 0 0 0"> Blog's Main Topic 2
-          </TextBlock>
+             <TextBlock HorizontalAlignment = "Left"
+                        Margin = "20 0 0 0"> Blog's Main Topic 2
+             </TextBlock>
 
-          <TextBlock HorizontalAlignment = "Left"
-                     Margin = "20 0 0 0"> Blog's Main Topic 3
-          </TextBlock>
-
-          <TextBlock HorizontalAlignment = "Left"
-                     Margin = "20 0 0 0"> Associated Blogs
-          </TextBlock>
-
-        </DockPanel>
+             <TextBlock HorizontalAlignment = "Left"
+                        Margin = "20 0 0 0"> Blog's Main Topic 3
+             </TextBlock>
+             <TextBlock HorizontalAlignment = "Left"
+                        Margin = "20 0 0 0"> Associated Blogs
+             </TextBlock>
+             
+            </DockPanel>
+        </Border>
 
         <DockPanel Grid.Row = "0"
                    Grid.Column = "1">
@@ -45,34 +48,57 @@
         <StackPanel Grid.Row = "1"
                     Grid.Column = "0"
                     Orientation = "Vertical">
-            <TextBlock> Article 1
+            <TextBlock Margin="0 10 0 0"> Article 1
             </TextBlock>
 
-            <TextBlock Margin = "0 20 60 0"
-                       TextWrapping = "Wrap"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu purus ut metus ultrices eleifend. Cras sed vulputate eros. Morbi ultrices tristique lacus vel elementum. Aenean nulla dolor, aliquet vel ultricies id, dictum non ligula. Integer a velit quis odio imperdiet iaculis a vel velit. Curabitur pellentesque dapibus volutpat. Vivamus quis diam feugiat, tristique quam vitae, cursus nulla. Donec non dapibus enim. Nam semper sapien diam, non porttitor metus gravida vitae. Nulla est orci, condimentum eget diam sed, fermentum dictum sapien. Nam laoreet metus in ligula congue dictum.
+            <TextBlock Margin = "0 8 30 0"
+                       TextWrapping = "Wrap"> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget felis non nulla consectetur dapibus id dictum mauris. Quisque ut pretium felis. In non efficitur sem. Nunc ultrices consequat elit ac dignissim. Pellentesque massa neque, blandit malesuada eleifend non, fringilla vel tellus. Nulla fermentum tempor porttitor. Aliquam eu eros sit amet ex ultrices viverra. Etiam est velit, fermentum quis mi facilisis, posuere fermentum erat.
 
-Proin eu urna libero. Fusce et consectetur tortor. Praesent cursus lectus nisl, ut blandit ante fringilla non. Suspendisse auctor ornare mauris, et tincidunt nunc maximus at. Donec id ipsum id dui pharetra facilisis. Phasellus cursus sollicitudin lacus. Morbi metus turpis, posuere non laoreet vel, dapibus nec nisl. Ut tristique non lorem vitae scelerisque.
+Mauris luctus molestie porttitor. Maecenas quis consectetur risus, dapibus pellentesque nunc. Cras sagittis quam sit amet neque porta malesuada. Sed malesuada justo euismod arcu tincidunt, et ullamcorper leo malesuada. Suspendisse porta elementum justo, vel pulvinar elit vulputate nec. In hac habitasse platea dictumst. Morbi ornare, urna ut vestibulum bibendum, lectus purus porttitor nunc, et volutpat libero urna vitae odio. Vivamus aliquam dolor sit amet neque dignissim, at viverra dolor venenatis. Suspendisse id ultricies libero. Curabitur sit amet mollis diam. In bibendum massa vel venenatis porttitor.
+
+Aliquam erat volutpat.
             </TextBlock>
+        <Image Source = "resm:Avalonia.Skia.Assets.NoiseAsset_256X256_PNG.png?assembly=Avalonia.Skia" 
+               Height = "256" 
+               Width = "512" 
+               Stretch ="Fill"
+               Margin = "0 30 0 0">
+        </Image>
         </StackPanel>
 
         <StackPanel Grid.Row = "1"
                    Grid.Column = "1"
                    Orientation = "Vertical">
-            <TextBlock Margin = "0 35 0 0"
+            <TextBlock Margin = "10 35 0 0"
                        TextWrapping = "Wrap"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec bibendum lectus, quis aliquam diam. Nullam commodo ipsum lacus, a laoreet orci elementum non. Maecenas non risus mattis, mattis orci nec, rhoncus purus. Pellentesque viverra nunc felis, sed laoreet magna dapibus in. Praesent ut felis sollicitudin, porttitor dolor vitae, fringilla.
             </TextBlock>
-            <TextBlock Margin = "160 5 0 0"> More
+            <TextBlock Margin = "160 5 0 0"
+                       TextDecorations="Underline"> More
             </TextBlock>
             <TextBlock Margin = "125 5 0 0"> Yesterday
             </TextBlock>
 
-            <TextBlock Margin = "0 15 0 0"
+            <TextBlock Margin = "10 15 0 0"
                        TextWrapping = "Wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida erat ante, ac cursus sem finibus sed. Maecenas id lacus eu metus cursus placerat a nec quam. Quisque iaculis neque id lorem pharetra aliquam. Integer elementum pellentesque efficitur. Fusce maximus dolor vitae augue placerat imperdiet. Suspendisse id nibh posuere, luctus.
             </TextBlock>
-            <TextBlock Margin = "160 5 0 0"> More
+            <TextBlock Margin = "160 5 0 0"
+                       TextDecorations="Underline"> More
             </TextBlock>
             <TextBlock Margin = "120 5 0 0"> 1 week ago
             </TextBlock>
         </StackPanel>
+
+        <DockPanel Grid.Row ="1"
+                    Grid.Column ="0"
+                    Width = "650">
+            <TextBlock Margin = "0 600 0 0"
+                       DockPanel.Dock = "Left"> Tags: Tag1 Tag2 Tag3 Tag4
+            </TextBlock>
+
+            <TextBlock Margin = "300 600 0 0"
+                       DockPanel.Dock ="Right"> Rate this article 4/5
+            </TextBlock>
+        </DockPanel>
     </Grid>
 </Window>
